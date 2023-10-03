@@ -43,7 +43,7 @@ export default (app: Router) => {
 
         return res.status(201).json({ userDTO, token });
       } catch (e) {
-        //logger.error('🔥 error: %o', e);
+        logger.error('🔥 error: %o', e);
         return next(e);
       }
     },
